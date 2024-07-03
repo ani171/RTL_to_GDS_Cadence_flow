@@ -5,3 +5,4 @@ globals
 )
 #Some other io orders
 # Clockwise order, Counterclockwise order, Radial order
+#Place status - fixed and flexible
