@@ -1,4 +1,3 @@
-(
 globals
         version = 3
 	io_order = default
