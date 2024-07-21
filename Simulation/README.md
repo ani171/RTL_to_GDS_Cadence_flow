@@ -1,9 +1,9 @@
 The primary goal of functional verification is to confirm that the design, described using an HDL like Verilog or VHDL, correctly implements the specified functionality. This involves checking that the design meets all the requirements and specifications without any logical errors using tools such as Modelsim ,QuestaSim, Xcelium,etc. For Functional Verification we require the Design files and the Testbench of the Design written in HDL like Verilog or VHDL Through which we can generate a Waveform to
 verify the functionality of the Design is correctly implemented as written in the Code.
 
-**TOOL USED** : XELIUM 
-**INPUT FILES**: Design file (Counter.v) and Testbench file (CounterTB.v)
-**STEPS TO PERFORM SIMULATION**
+**TOOL USED** : XELIUM  <br>
+**INPUT FILES**: Design file (Counter.v) and Testbench file (CounterTB.v) <br>
+**STEPS TO PERFORM SIMULATION** <br>
 1. Invoke the Cadence tool in the folder where both the design and the testbench files are present
 ```
 csh
