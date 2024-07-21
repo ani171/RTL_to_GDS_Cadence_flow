@@ -13,4 +13,25 @@
 
 ## Steps for floorplanning in Cadence Innovus
 
+1. Navigate to the floorplan folder and invoke the cadence environment
+```
+csh
+source /home/installs/cshrc
+```
+2. Open the Innovus tool
+```
+innovus
+```
+![image](https://github.com/user-attachments/assets/a17155b8-fb30-4405-82c8-a762ef628ad0)
 
+3. In the Innovus GUI
+    * Click on File option
+    * Click ok Import design
+4. In the Import design window
+    * Add the netlist file is generated after synthesis. Note to add the power pads before importing
+    * Select the `Auto assign` option
+    * Select the lef files and add the required lef files according to the pdk being used
+    * Declare the power and ground nets
+    * For MMMC definition, click on `Create analysis Configuration`
+     
+   
