@@ -25,15 +25,22 @@ innovus
 ![image](https://github.com/user-attachments/assets/a17155b8-fb30-4405-82c8-a762ef628ad0)
 
 3. In the Innovus GUI
-    * Click on File option
+    * Click on the File option
     * Click ok Import design
 4. In the Import design window
     * Add the netlist file is generated after synthesis. Note to add the power pads before importing
     * Select the `Auto assign` option
     * Select the lef files and add the required lef files according to the pdk being used
+    * Add in the IO file
     * Declare the power and ground nets
-    * For MMMC definition, click on `Create analysis Configuration`
-            * In the library sets, add in the fast cells liberty file for minimum timing analysis and slow cells liberty file for maximum timing analysis
-      
+    * For MMMC definition, click on `Create analysis Configuration` <br>
+            * In the library sets, add in the fast cells liberty file for minimum timing analysis and slow cells liberty file for maximum timing analysis <br>
+            * Define the best and worst RC corners by specifying the appropriate temperature according to the PDK <br>
+            * Define the best and worst operating conditions using the PVT values specified in the PDK <br>
+            * Now specify the delay corners. Set the analysis to `On-Chip Variation`. Create maximum delay analysis using the worst RC corner and minimum analysis using the best RC corner. Note that Early timing would be related to the minimum timing and the best operating condition while the late timing would be related to maximum timing and worst operating condition <br>
+            * In the `Constraints mode` option add in the sdc file obtained after technology mapping and optimization via synthesis stage <br>
+      * Save the MMMC analysis defined file as a `.view` file
+      * Click on OK, the die along with IO pads is now ready for the next stage 
+
      
    
