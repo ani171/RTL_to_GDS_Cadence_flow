@@ -41,7 +41,13 @@ innovus
             * Now specify the delay corners. Set the analysis to `On-Chip Variation`. Create maximum delay analysis using the worst RC corner and minimum analysis using the best RC corner. Note that Early timing would be related to the minimum timing and the best operating condition while the late timing would be related to maximum timing and worst operating condition <br>
             * In the `Constraints mode` option add in the sdc file obtained after technology mapping and optimization via synthesis stage <br>
     * Save the MMMC analysis defined file as a `.view` file
-    * Click on OK, the die along with IO pads is now ready for the next stage 
+    * Click on OK, the die along with IO pads is now ready for the next stage
+![image](https://github.com/user-attachments/assets/af0467a1-0846-4c23-883d-5fd63ed24f2b)
+
+5. Once the design is imported, go to the `Floorplan` option and click on `Specify Floorplan`
+6. Based on your approach, either define the core size or the die size and then define the space between the core and the IO boundary. The Core and Die width and height can be calculated based on the formulas below
+![image](https://github.com/user-attachments/assets/b080ac83-6622-42d3-ae51-67a053696ca4)
+7. Floorplanning is now completed and the design is now ready for the next process which is power planning. Save the file as an `.enc` file
 
      
    
