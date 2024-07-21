@@ -1,0 +1,14 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_rc_corner -name rc_best -cap_table {SCL_NEW_26092019_basic.CapTbl} -T {-40} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_rc_corner -name rc_worst -cap_table {SCL_NEW_26092019_basic.CapTbl} -T {125} -preRoute_res {1.0} -preRoute_cap {1.0} -preRoute_clkres {0.0} -preRoute_clkcap {0.0} -postRoute_res {1.0} -postRoute_cap {1.0} -postRoute_xcap {1.0} -postRoute_clkres {0.0} -postRoute_clkcap {0.0}
+create_op_cond -name op_cond_best -library_file {../../../../installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib} -P {1} -V {1.98} -T {-40}
+create_op_cond -name op_cond_worst -library_file {../../../../installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib} -P {1} -V {1.62} -T {125}
+create_library_set -name max_timing -timing {../../../../installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib ../../../../installs/SCL180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_max.lib}
+create_library_set -name min_timing -timing {../../../../installs/SCL180/scl180/stdcell/fs120/4M1IL/liberty/lib_flow_ff/tsl18fs120_scl_ff.lib ../../../../installs/SCL180/scl180/iopad/cio150/4M1L/liberty/tsl18cio150_min.lib}
+create_constraint_mode -name all -sdc_files {up_counter_incremental.sdc}
+create_delay_corner -name max_delay -rc_corner {rc_worst} -early_library_set {min_timing} -late_library_set {max_timing} -early_opcond_library {tsl18fs120_scl_ff} -late_opcond_library {tsl18fs120_scl_ss} -early_opcond {op_cond_best} -late_opcond {op_cond_worst}
+create_delay_corner -name min_delay -rc_corner {rc_best} -early_library_set {min_timing} -late_library_set {max_timing} -early_opcond_library {tsl18fs120_scl_ff} -late_opcond_library {tsl18fs120_scl_ss} -early_opcond {op_cond_best} -late_opcond {op_cond_worst}
+create_analysis_view -name best -constraint_mode {all} -delay_corner {min_delay}
+create_analysis_view -name worst -constraint_mode {all} -delay_corner {max_delay}
+set_analysis_view -setup {worst} -hold {best}
