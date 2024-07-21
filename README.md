@@ -1,4 +1,4 @@
-# RTL_to_GDS
+# RTL to GDS
 
 * The RTL to GDS flow is a crucial process in the design and manufacturing of integrated circuits <br>
 **RTL** - Register Transfer Level <br>
