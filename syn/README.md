@@ -12,4 +12,5 @@
     * Area Constraints: Define physical space limits.
     * Power Constraints: Set power consumption limits.
 
+## Steps to perform Logic synthesis
 
