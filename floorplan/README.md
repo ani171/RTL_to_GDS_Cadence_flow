@@ -22,11 +22,12 @@ source /home/installs/cshrc
 ```
 innovus
 ```
-![image](https://github.com/user-attachments/assets/a17155b8-fb30-4405-82c8-a762ef628ad0)
 
 3. In the Innovus GUI
     * Click on the File option
     * Click ok Import design
+![image](https://github.com/user-attachments/assets/a17155b8-fb30-4405-82c8-a762ef628ad0)
+
 4. In the Import design window
     * Add the netlist file is generated after synthesis. Note to add the power pads before importing
     * Select the `Auto assign` option
