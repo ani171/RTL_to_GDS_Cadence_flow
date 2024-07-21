@@ -8,5 +8,9 @@
     4. Timing Requirements: Helps meet timing constraints by strategically placing blocks to minimize critical path delays.
     5. Design Rule Compliance: Ensures that the layout adheres to design rules and manufacturing constraints, preventing errors during fabrication.
 
-**TOOL USED** : INNOVUS
-**INPUTS**: 
+**TOOL USED** : INNOVUS <br>
+**INPUTS**: Constraints file (up_counter_incremental.sdc), IO file (up_counter.io), Technology mapped and optimized netlist file (up_counter_incremental.v) <br.
+
+## Steps for floorplanning in Cadence Innovus
+
+
