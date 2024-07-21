@@ -12,5 +12,34 @@
     * Area Constraints: Define physical space limits.
     * Power Constraints: Set power consumption limits.
 
+**TOOL USED** - CADENCE GENUS
+**INPUTS** - Constraints file (Counter_Constarints.sdc), Tcl file (run.tcl) , Design file (up_counter.v)
 ## Steps to perform Logic synthesis
+1. Navigate to the synthesis folder and invoke the cadence environment
+```
+csh
+source /home/installs/cshrc
+
+```
+2. Open the Genus tool
+```
+genus -gui 
+```
+3. Source Synthesis Script in the Genus command prompt
+```
+source Scripts/run.tcl
+
+```
+4. To View Schematic :
+      * Click the ‘+’ icon.
+      * Select ‘Schematic’ to view the design.
+
+## Generated files
+1. Generic Netlist
+2. Technology-Mapped Netlist
+3. Optimized Netlist
+4. Technology-Mapped Constraint File
+5. Area reports
+6. Timing reports
+7. Gate count reports
 
