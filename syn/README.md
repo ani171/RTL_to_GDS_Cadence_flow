@@ -19,7 +19,6 @@
 ```
 csh
 source /home/installs/cshrc
-
 ```
 2. Open the Genus tool
 ```
@@ -28,7 +27,6 @@ genus -gui
 3. Source Synthesis Script in the Genus command prompt
 ```
 source Scripts/run.tcl
-
 ```
 4. To View Schematic :
       * Click the ‘+’ icon.
