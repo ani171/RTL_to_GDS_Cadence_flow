@@ -33,5 +33,7 @@ innovus
     * Select the lef files and add the required lef files according to the pdk being used
     * Declare the power and ground nets
     * For MMMC definition, click on `Create analysis Configuration`
+            * In the library sets, add in the fast cells liberty file for minimum timing analysis and slow cells liberty file for maximum timing analysis
+      
      
    
