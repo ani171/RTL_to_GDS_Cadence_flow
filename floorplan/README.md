@@ -47,7 +47,11 @@ innovus
 5. Once the design is imported, go to the `Floorplan` option and click on `Specify Floorplan`
 6. Based on your approach, either define the core size or the die size and then define the space between the core and the IO boundary. The Core and Die width and height can be calculated based on the formulas below
 ![image](https://github.com/user-attachments/assets/b080ac83-6622-42d3-ae51-67a053696ca4)
-7. Floorplanning is now completed and the design is now ready for the next process which is power planning. Save the file as an `.enc` file
+![image](https://github.com/user-attachments/assets/5a14ba71-0a8a-43c7-87d7-e833cb2659b5)
+
+7. To fill in the gaps between the IO pads, go to `Place`, click on `Add physical cell` and click on `Add IO fillers`
+8. Add in the available fillers in your PDK in all the directions i.e. Top, Bottom, Left and Right 
+9. Floorplanning is now completed and the design is now ready for the next process which is power planning. Save the file as an `.enc` file
 
      
    
