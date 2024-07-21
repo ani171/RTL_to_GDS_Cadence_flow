@@ -39,8 +39,8 @@ innovus
             * Define the best and worst operating conditions using the PVT values specified in the PDK <br>
             * Now specify the delay corners. Set the analysis to `On-Chip Variation`. Create maximum delay analysis using the worst RC corner and minimum analysis using the best RC corner. Note that Early timing would be related to the minimum timing and the best operating condition while the late timing would be related to maximum timing and worst operating condition <br>
             * In the `Constraints mode` option add in the sdc file obtained after technology mapping and optimization via synthesis stage <br>
-      * Save the MMMC analysis defined file as a `.view` file
-      * Click on OK, the die along with IO pads is now ready for the next stage 
+    * Save the MMMC analysis defined file as a `.view` file
+    * Click on OK, the die along with IO pads is now ready for the next stage 
 
      
    
