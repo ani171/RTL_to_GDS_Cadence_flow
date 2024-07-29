@@ -1,4 +1,4 @@
-#Powerplan
+# Powerplan
 * Power plan refers to a detailed strategy for managing and optimizing the power distribution and consumption of an integrated circuit
 ## Importance of Power Planning in Physical Design Flow
 1. Power Distribution Network (PDN) Design:
